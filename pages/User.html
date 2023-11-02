@@ -17,7 +17,204 @@
 
     <div class="form-container">
         <header>Customer Registration</header>
+        <form id="customer_form">
+            <!--            form one-->
+            <div class="form first">
+
+                <!--                User personal details-->
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="customerFullName">Full Name</label>
+                            <input id="customerFullName" type="text" placeholder="Enter your name">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerEmail">Email Address</label>
+                            <input id="customerEmail" type="text" placeholder="Enter your email">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerContact">Mobile Number</label>
+                            <input id="customerContact" type="text" placeholder="Enter your email">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerAddress">Address</label>
+                            <input id="customerAddress" type="text" placeholder="Enter your Address">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerDob">Date of birth</label>
+                            <input id="customerDob" type="date"  >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerGender">Gender</label>
+                            <select id="customerGender" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                            <!--                            <input id="customerGender" type="text"  placeholder="Select gender">-->
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--                User id details-->
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="customerIdType">ID Type</label>
+                            <select id="customerIdType" required>
+                                <option disabled selected>Select Id Type</option>
+                                <option>NIC</option>
+                                <option>Passport</option>
+                            </select>
+                            <!--                            <input id="customerIdType" type="text" placeholder="Enter Id Type">-->
+                        </div>
+
+                        <div class="input-field">
+                            <label id="note_1" >Note :</label>
+                            <label id="note_2">Please choose first your id type before enter id number</label>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerId">ID Number</label>
+                            <input id="customerId" type="text" placeholder="Enter Id number">
+                        </div>
+                    </div>
+                </div>
+
+                <!--                User Account Details-->
+                <div class="details account">
+                    <span class="title">Account Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="customerUsername">Username</label>
+                            <input id="customerUsername" type="text" placeholder="Enter Username">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerPassword">Password</label>
+                            <input id="customerPassword" type="password" placeholder="Enter password">
+                            <div id="passwordBtn" class="password-Btn"><i class="uil uil-eye"></i></div>
+                        </div>
+                        <!--                        <i class="uil uil-eye-slash"></i>-->
+                        <div class="input-field">
+                            <label for="customerRePassword">Re-enter Password</label>
+                            <input id="customerRePassword" type="password" placeholder="Re-enter password">
+                            <div id="rePasswordBtn" class="password-Btn"><i class="uil uil-eye"></i></div>
+                        </div>
+                    </div>
+
+
+                    <!--                   Form 1 Next button-->
+                    <!--                    for icon -> 'uil-navigator' -->
+                    <div class="buttons ">
+                        <button id="nextBtn1" class="nextBtn" type="button">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-angle-right-b"></i>
+                        </button>
+                        <div id="warning-box">
+                            <i class="uil uil-shield-exclamation warning-icon"></i>
+                            <label id="warning-msg" class="warning-msg">ajksj jahFIUH EfbeuaIHF </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--            form two-->
+            <div id="secForm" class="form second">
+
+                <!--                User prifile pic details-->
+                <div class="details personal">
+                    <span class="title">Profile Picture</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label class="middle" for="customerProfilePic">Profile picture</label>
+                            <img id="customerProfilePic"  src="../assets/image/image-upload-preview.png" height="331" width="264.98" alt="image">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="customerFullName" class="info"><i class="uil uil-shield-question infoIcon"></i> Note : </label>
+                            <label for="customerFullName" class="info">Tap the image icon to upload your pitcure </label>
+                            <label for="customerFullName" class="info">Add your profile picture</label>
+                            <input id="profilePicChooser" type="file" accept="image/*">
+                        </div>
+
+                        <div class="input-field">
+
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div id="backBtn1" class="backBtn" type="button">
+                            <i class="uil uil-angle-left-b"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+
+                        <button id="nextBtn2" class="nextBtn" type="button">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-angle-right-b"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="thirdForm" class="form third">
+
+
+                <div class="details account">
+                    <span class="title">NIC/Passport Photos</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="customerFullName" class="info"><i class="uil uil-shield-question infoIcon"></i> Note : </label>
+                            <label for="customerFullName" class="info">Tap the image icon to upload your nic/passport pictures </label>
+                            <label for="customerFullName" class="info">Add your profile picture</label>
+                            <!--                            <input id="customerNic" type="text" placeholder="Enter Username">-->
+                        </div>
+
+                        <div class="input-field">
+                            <label class="middle" for="customerNicPic1">Upload Front Photo</label>
+                            <img id="customerNicPic1" src="../assets/image/image-upload-preview.png" height="331" width="264.98" alt="image">
+                        </div>
+
+                        <div  class="input-field">
+                            <label class="middle" for="customerPassword">Upload back photo</label>
+                            <img id="customerNicPic2" src="../assets/image/image-upload-preview.png" height="331" width="264.98" alt="image">
+                        </div>
+                    </div>
+
+                    <!--                   Form 2 buttons-->
+                    <div class="buttons">
+                        <div id="backBtn2" class="backBtn" type="button">
+                            <i class="uil uil-angle-left-b"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+
+                        <button id="submitBtn" class="sumbit" type="button">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
     </div>
+
 
 
 </body>
