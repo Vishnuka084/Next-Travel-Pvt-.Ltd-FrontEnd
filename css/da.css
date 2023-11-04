@@ -1,0 +1,43 @@
+#user-container{
+    /*position: relative;*/
+    /*background-color: rgb(98, 69, 112);*/
+    background: linear-gradient(180deg , #202125 30%, #e4e5e5 0%);
+    height: 93vh;
+    /*position: fixed;*/
+    /*top: 0;*/
+    width: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding: 0 2vw;
+}
+
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+#addBtn{
+    background-color: #AB47BC;
+    border-radius: 10px;
+    border: 0 solid #AB47BC;
+    color: #eeeeee;
+    font-size: 13px;
+    height: 6vh;
+    width: 8vw;
+    min-width: max-content;
+    cursor: pointer;
+}
+
+.sub-title{
+    color: #eeeeee;
+    font-weight: 300;
+    font-size: 2vw;
+}
+
+.table,table{
+    width: 100%;
+}
