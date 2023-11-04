@@ -1,4 +1,7 @@
 export class UserDTO{
+
+
+
     constructor(userId,userFullName,username,userPassword,
                 userIdNum,userIdType,userEmail,userAddress,userDob,userGender,userContactNum) {
         this.userId=userId;
