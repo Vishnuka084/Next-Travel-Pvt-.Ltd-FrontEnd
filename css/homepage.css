@@ -15,11 +15,26 @@ body {
     margin: 9em;
     padding: 0.2em 0.6em;
     cursor: pointer;
-    color: #fff;
+    color: #3f3b3b;
     font-size: 2em;
     max-width: 26em;
 }
-.intro h1 {
+.content{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.content > h1 {
+    font-size: 80px;
+    font-weight: 1000;
+    font-family: 'Prompt', sans-serif;
+}
+.content > h1 >span{
+    font-size: 30px;
+}
+/*.intro h1 {
     margin-bottom: 1.1em;
     line-height: 1;
     color: #595656;
@@ -27,7 +42,7 @@ body {
     font-weight: 100;
     font-family: 'Prompt', sans-serif;
 
-}
+}*/
 #CrossFade {
     background: #fff;
     display: flex;
@@ -84,7 +99,7 @@ body {
 
 
 .log {
-    background-color: #269a06; /* Green */
+    background-color: #42fd0c; /* Green */
     border: none;
     color: white;
     padding: 10px 25px;
@@ -96,6 +111,7 @@ body {
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
+    border-radius: 30%;
 }
 .log:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
