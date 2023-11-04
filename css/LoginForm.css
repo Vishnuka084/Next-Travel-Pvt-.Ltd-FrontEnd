@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200&family=Playfair+Display:ital,wght@1,900&family=Prompt:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.login-form{
+    height: 100vh;
+    /*background-color: #ffe01e;*/
+    background-image: url("../assets/image/pxfuel.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*justify-content: center;*/
+    overflow: hidden;
+}
+
+.form{
+    background-color: rgba(124, 124, 124, 0.22);
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    /*background-color: white;*/
+    width: 70%;
+    height: 80%;
+}
+
+.login>div:first-child{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    /*font-family: 'Maiandra GD',sans-serif;*/
+}
+
+.content{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.content > h1 {
+    font-size: 80px;
+    font-weight: 1000;
+    font-family: 'Prompt', sans-serif;
+}
+.content > h1 >span{
+    font-size: 30px;
+}
+
+.login-container{
+    height: 90%;
+    /*background-color: #ffe01e;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-field{
+    display: flex;
+    width: 80%;/*200px*/
+    flex-direction: column;
+    margin: 4px 0;
+    position: relative;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+#loginBtn{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /*border: 1px solid #aaa;*/
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    background-color: #006CBE;
+}
+
+#passwordTxt2{
+    padding: 0 34px 0 15px;
+}
+
+.password-Btn{
+    border-radius:0 5px 5px 0;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    margin-bottom: 6px;
+    height: 40px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a53be;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.forward-form{
+    /*width: 100vw;*/
+    height: 100vh;
+    background-color: #006CBE;
+    position: relative;
+}
+
+.card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    height: 100%;
+    width: calc(100% / 5);
+    /*background-color: white;*/
+}
+
+.card:nth-child(1){
+    background-image: url("../assets/image/place/31-Amazing-Things-to-do-in-Sri-Lanka_-The-Pearl-of-the-Indian-Ocean.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(2){
+    background-image: url("../assets/image/place/Ceylon-Tea-Trails_-Hatton_-Hill-Country_-Sri-Lanka-Explore-_-Book.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(3){
+    background-image: url("../assets/image/place/Dalawella-Beach.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(4){
+    background-image: url("../assets/image/place/SRI-LANKA_-THE-ULTIMATE-TRAVEL-GUIDE-_1_.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(5){
+    background-image: url("../assets/image/place/Travel-Sri-Lanka_-30-Photos-That-Will-Make-You-Pack-Your-Bags-And-Go.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.link-container{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.41);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    width: 600px;
+    height: 500px;
+    /*background-color: rgba(255, 255, 255, 0.34);*/
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list > a{
+    width: max-content;
+    height: 50px!important;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+    /*background-color: black;*/
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+
