@@ -12,7 +12,7 @@ body {
 }
 .intro {
     position: relative;
-    margin: 2em;
+    margin: 9em;
     padding: 0.2em 0.6em;
     cursor: pointer;
     color: #fff;
@@ -20,7 +20,7 @@ body {
     max-width: 26em;
 }
 .intro h1 {
-    margin-bottom: 0.5em;
+    margin-bottom: 1.1em;
     line-height: 1;
     color: #595656;
     font-size: 50px;
@@ -79,3 +79,8 @@ body {
         opacity: 0;
     }
 }
+
+/*---------------------*/
+
+
+
