@@ -58,6 +58,7 @@ export class GuideController{
         });
 
         $("#allBtn").on("click",() => {
+            $("#searchTxt").val("");
             $("#allBtn").addClass("color");
             this.getAllDataFromDb();
         });
@@ -155,18 +156,18 @@ export class GuideController{
     }
 
     handleSubmitBtnAction(){
-         if(!isUpdate){
+        if(!isUpdate){
 
-             if(this.validateContactFields() && this.validateFormTwo()){
+            if(this.validateContactFields() && this.validateFormTwo()){
 
-                 this.createFormData();
-             }
+                this.createFormData();
+            }
 
         }else {
 
-             if(this.validateContactFields()){
-                 this.createFormData();
-             }
+            if(this.validateContactFields()){
+                this.createFormData();
+            }
             // this.validateFormForUpdate();
         }
     }
@@ -359,8 +360,8 @@ export class GuideController{
             $('#guide-container').append(card);
 
             let star=(value.hotelCategory==="5 Star") ? 5 :
-                        (value.hotelCategory==="4 Star") ? 4 :
-                            (value.hotelCategory==="3 Star") ? 3 : 2;
+                (value.hotelCategory==="4 Star") ? 4 :
+                    (value.hotelCategory==="3 Star") ? 3 : 2;
 
             for (let i=0;i<star;i++){
                 $("#guide-container > li:last-child > span").append("<i class=\"fa-solid fa-star \"></i>");
@@ -427,8 +428,8 @@ export class GuideController{
                 (type === "contact") ? "Allow only 10 numbers" :
                     (type === "address") ?"allows for 10 or 255 characters matching any uppercase letter (A-Z)," +
                         " any lowercase letter (a-z), or a / and , " :
-                            (type === "id") ? "Allow only for 10  numbers, \n DON'T INPUT (V) ENTER (0) FOR IT " :
-                                "Please complete details" ;
+                        (type === "id") ? "Allow only for 10  numbers, \n DON'T INPUT (V) ENTER (0) FOR IT " :
+                            "Please complete details" ;
 
         return message;
     }
