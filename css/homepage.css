@@ -10,3 +10,15 @@
 body{
     position: relative;
 }
+
+.Home-form{
+    height: 100vh;
+    /*background-color: #ffe01e;*/
+    background-image: url("../assets/image/pxfuel.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
