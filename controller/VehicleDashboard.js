@@ -210,7 +210,7 @@ export class VehicleDashboard{
         $("#searchTxt").on("keydown", (event) =>{
             if(event.key==='Enter'){
                 $("#allBtn").removeClass("color");
-               this.findVehicleFromDb($("#searchTxt").val());
+                this.findVehicleFromDb($("#searchTxt").val());
             }
         });
 
@@ -479,7 +479,7 @@ export class VehicleDashboard{
             $('#vehicleTable tbody').append(row);
 
             $("#vehicleTable > tbody >tr:last-child >td:first-child >.img2").
-                attr('src',`data:image/jpg;base64,${value.frontImage}`);
+            attr('src',`data:image/jpg;base64,${value.frontImage}`);
 
             if(status==="Eligible"){
                 $("#vehicleTable > tbody >tr:last-child >td:nth-last-child(4) > span").addClass("economy")
