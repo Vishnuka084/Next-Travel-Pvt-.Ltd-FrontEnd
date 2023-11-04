@@ -163,20 +163,20 @@ export class GuideController{
     }
 
     handleSubmitBtnAction(){
-         if(!isUpdate){
-             // this.validateFormTwo()
-             if(this.validateTextArea() && this.validateFormTwo()){
-                 // fileArray.map(value1 => {
-                 //     console.log(value1)
-                 // })
-                 this.createFormData();
-             }
+        if(!isUpdate){
+            // this.validateFormTwo()
+            if(this.validateTextArea() && this.validateFormTwo()){
+                // fileArray.map(value1 => {
+                //     console.log(value1)
+                // })
+                this.createFormData();
+            }
 
         }else {
 
-             if(this.validateTextArea()){
-                 this.createFormData();
-             }
+            if(this.validateTextArea()){
+                this.createFormData();
+            }
             // this.validateFormForUpdate();
         }
     }
@@ -392,8 +392,8 @@ export class GuideController{
                 (type === "contact") ? "Allow only 10 numbers" :
                     (type === "address") ?"allows for 10 or 255 characters matching any uppercase letter (A-Z)," +
                         " any lowercase letter (a-z), or a / and , " :
-                            (type === "id") ? "Allow only for 10  numbers, \n DON'T INPUT (V) ENTER (0) FOR IT " :
-                                "Please complete details" ;
+                        (type === "id") ? "Allow only for 10  numbers, \n DON'T INPUT (V) ENTER (0) FOR IT " :
+                            "Please complete details" ;
 
         return message;
     }
