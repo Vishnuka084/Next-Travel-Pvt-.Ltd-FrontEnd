@@ -54,10 +54,10 @@ export class UserDashboard{
         userList.map((value) =>{
             console.log("objed : "+value.userId);
             console.log(value.userId===userId);
-           if (value.userId===userId){
-               // console.log("value : "+value)
-              user=value;
-           }
+            if (value.userId===userId){
+                // console.log("value : "+value)
+                user=value;
+            }
         });
         return user;
     }
