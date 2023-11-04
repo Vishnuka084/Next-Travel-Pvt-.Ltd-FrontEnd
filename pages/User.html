@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Vishnuka Yahan De Silva ">
+    <meta name="author" content="Tharindu Dhanushka Abeywickrama">
     <title>Customer Registration</title>
-
+<!--    <link rel="stylesheet" href="../assets/normalize.css">-->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,400;1,900&family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/pagesCSS/CustomerRegistration.css">
+    <link rel="stylesheet" href="../css/CustomerReg.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
 
-    <style></style>
+    </style>
 </head>
 <body>
-
     <div class="form-container">
         <header>Customer Registration</header>
+
         <form id="customer_form">
-            <!--            form one-->
+<!--            form one-->
             <div class="form first">
 
-                <!--                User personal details-->
+<!--                User personal details-->
                 <div class="details personal">
                     <span class="title">Personal Details</span>
 
@@ -58,14 +59,14 @@
                                 <option>Male</option>
                                 <option>Female</option>
                             </select>
-                            <!--                            <input id="customerGender" type="text"  placeholder="Select gender">-->
+<!--                            <input id="customerGender" type="text"  placeholder="Select gender">-->
                         </div>
 
                     </div>
 
                 </div>
 
-                <!--                User id details-->
+<!--                User id details-->
                 <div class="details ID">
                     <span class="title">Identity Details</span>
 
@@ -77,7 +78,7 @@
                                 <option>NIC</option>
                                 <option>Passport</option>
                             </select>
-                            <!--                            <input id="customerIdType" type="text" placeholder="Enter Id Type">-->
+<!--                            <input id="customerIdType" type="text" placeholder="Enter Id Type">-->
                         </div>
 
                         <div class="input-field">
@@ -92,7 +93,7 @@
                     </div>
                 </div>
 
-                <!--                User Account Details-->
+<!--                User Account Details-->
                 <div class="details account">
                     <span class="title">Account Details</span>
 
@@ -107,7 +108,7 @@
                             <input id="customerPassword" type="password" placeholder="Enter password">
                             <div id="passwordBtn" class="password-Btn"><i class="uil uil-eye"></i></div>
                         </div>
-                        <!--                        <i class="uil uil-eye-slash"></i>-->
+<!--                        <i class="uil uil-eye-slash"></i>-->
                         <div class="input-field">
                             <label for="customerRePassword">Re-enter Password</label>
                             <input id="customerRePassword" type="password" placeholder="Re-enter password">
@@ -116,8 +117,8 @@
                     </div>
 
 
-                    <!--                   Form 1 Next button-->
-                    <!--                    for icon -> 'uil-navigator' -->
+<!--                   Form 1 Next button-->
+<!--                    for icon -> 'uil-navigator' -->
                     <div class="buttons ">
                         <button id="nextBtn1" class="nextBtn" type="button">
                             <span class="btnText">Next</span>
@@ -132,7 +133,7 @@
                 </div>
             </div>
 
-            <!--            form two-->
+<!--            form two-->
             <div id="secForm" class="form second">
 
                 <!--                User prifile pic details-->
@@ -212,10 +213,13 @@
                 </div>
 
             </div>
+
+
         </form>
     </div>
 
-
-
+    <script src="../assets/jquery/jquery-3.6.0.min.js"></script>
+    <script type="module" src="../controller/UserRegController.js"></script>
+    <script type="module" src="../dto/UserDTO.js"></script>
 </body>
 </html>

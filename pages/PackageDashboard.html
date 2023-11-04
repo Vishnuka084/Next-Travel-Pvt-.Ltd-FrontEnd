@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Tharindu Dhanushka Abeywickrama">
-    <title>Vehicle Manager Dashboard</title>
+    <title>Travel Package Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<!--    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,400;1,900&family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="../css/VehicleDashboard.css">
+    <link rel="stylesheet" href="../css/PackageDashboard.css">
+    <link rel="stylesheet" href="../assets/fontsAwesome/css/all.min.css">
 
 </head>
 <body>
@@ -232,6 +233,7 @@
         <div class="container">
 
             <div class="row-1">
+                <div id="allBtn" class="color opt">All</div>
 <!--                <div class="col">-->
 <!--                    <label class="sub-title">Vehicles</label>-->
 <!--                </div>-->
@@ -244,51 +246,73 @@
                 </div>
             </div>
 
-            <div class="row-1">
-                <div class="opt" id="opt_1">
-                    <div id="allBtn" class="color">All</div>
-                    <div id="fuelBtn">Fuel</div>
-                    <div id="transmiBtn">Transmission</div>
-                </div>
-
-                <div class="opt" id="opt_2">
-                    <div id="autoBtn" >Auto</div>
-                    <div id="manualBtn">Manual</div>
-                </div>
-
-                <div class="opt" id="opt_3">
-                    <div id="petrolBtn" >Petrol</div>
-                    <div id="dieselBtn">Diesel</div>
-                </div>
-
-                <div class="opt" id="opt_4">
-                    <div id="ascBtn" class="color">Asc</div>
-                    <div id="descBtn">Desc</div>
-                </div>
-            </div>
-
             <div class="table">
-                <table id="vehicleTable" class="">
+                <table id="packageTable" class="">
                     <thead class="head">
                     <tr>
-                        <th>Pic</th>
-                        <th>Vehicle Num</th>
-                        <th>Brand</th>
+                        <th>Package ID</th>
                         <th>Category</th>
-                        <th>Type</th>
-                        <th>HybridOrNot</th>
-                        <th>FuelType</th>
-                        <th>FuelUsage</th>
-                        <th>Seats</th>
-                        <th>Fee for 1km</th>
-                        <th>Fee for Day</th>
-                        <th>Status</th>
+                        <th>Customer ID</th>
+                        <th>Vehicle Num</th>
+                        <th>Guide Id</th>
+                        <th>Hotel Id</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Placed</th>
+                        <th>Value</th>
+                        <th>Paid</th>
                         <th>Opt</th>
                         <th>Opt</th>
                         <th>Opt</th>
                     </tr>
                     </thead>
                     <tbody class="">
+<!--                        <tr>-->
+<!--                            <td>2023/05@001</td>-->
+<!--                            <td>-->
+<!--                                <span class="star">-->
+<!--                                    <i class="fa-solid fa-star "></i>-->
+<!--                                    <i class="fa-solid fa-star "></i>-->
+<!--                                </span>-->
+<!--                            </td>-->
+<!--                            <td>9907711620</td>-->
+<!--                            <td>AXD-9696</td>-->
+<!--                            <td>-</td>-->
+<!--                            <td>2023/05@001</td>-->
+<!--                            <td>2023/09/10</td>-->
+<!--                            <td>2023/09/12</td>-->
+<!--                            <td>2023/09/08</td>-->
+<!--                            <td><strong>100000</strong></td>-->
+<!--                            <td><strong>50000</strong></td>-->
+<!--                            <td><i class="fa-solid fa-square-arrow-up-right"></i></td>-->
+<!--                            <td><i class="fa-solid fa-arrows-rotate"></i></td>-->
+<!--                            <td><i class="fa-solid fa-trash-can"></i></td>-->
+<!--                        </tr>-->
+
+<!--                        <tr>-->
+<!--                            <td>2023/05@001</td>-->
+<!--                            <td>-->
+<!--                                <span class="star">-->
+<!--                                    <i class="fa-solid fa-star "></i>-->
+<!--                                    <i class="fa-solid fa-star "></i>-->
+<!--                                    <i class="fa-solid fa-star "></i>-->
+<!--                                    <i class="fa-solid fa-star "></i>-->
+<!--                                    <i class="fa-solid fa-star "></i>-->
+<!--                                </span>-->
+<!--                            </td>-->
+<!--                            <td>9907711620</td>-->
+<!--                            <td>AXD-9696</td>-->
+<!--                            <td>-</td>-->
+<!--                            <td>2023/05@001</td>-->
+<!--                            <td>2023/09/10</td>-->
+<!--                            <td>2023/09/12</td>-->
+<!--                            <td>2023/09/08</td>-->
+<!--                            <td><strong>100000</strong></td>-->
+<!--                            <td><strong>50000</strong></td>-->
+<!--                            <td><i class="fa-solid fa-square-arrow-up-right"></i></td>-->
+<!--                            <td><i class="fa-solid fa-arrows-rotate"></i></td>-->
+<!--                            <td><i class="fa-solid fa-trash-can"></i></td>-->
+<!--                        </tr>-->
                     </tbody>
                 </table>
             </div>
@@ -298,7 +322,7 @@
 
     <script src="../assets/jquery/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    <script type="module" src="../controller/VehicleDashboard.js"></script>
+    <script type="module" src="../controller/PackageDashboard.js"></script>
 
 </body>
 </html>

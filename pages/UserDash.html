@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Tharindu Dhanushka Abeywickrama">
+    <title>User Dashboard</title>
+<!--  <link rel="stylesheet" href="../assets/normalize.css">-->
+  <link rel="stylesheet" href="../css/UserDashboard.css">
+  <link rel="stylesheet" href="../css/da.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,400;1,900&family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <style>
+    .nav-bar{
+      height: 7vh;
+      background-color: #202125;
+      border-bottom: 1px solid #5d5d5d;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-bar > .logo{
+      color: rgba(255, 255, 255, 0.76);
+      font-weight: 1000;
+      font-size: calc(2vw);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: max-content;
+    }
+
+    .nav-bar > ul{
+      color: #cecece;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      height: 100%;
+      margin: 0 30px;
+      padding: 0;
+    }
+
+    .nav-bar >ul > li{
+      margin-right: 10px;
+      font-size: 12px;
+      width: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*border: 1px solid #5d5d5d;*/
+      background-color: rgba(93, 93, 93, 0.85);
+      border-radius: 18px;
+      padding: 2px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .nav-icon{
+      font-size: 19px;
+      font-weight: 500;
+      margin-right: 5px;
+    }
+
+    .nav-bar >ul > li:hover{
+      background-color: rgba(164, 164, 164, 0.85);
+      color: #F5F8F7;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section id="model-container"  class="">
+    <div class="view-form animate__animated animate__zoomIn animate__delay-0.5s ">
+      <header>User Registration Details</header>
+
+      <div class="details form">
+        <!--        <span class="title">Personal Details</span>-->
+
+        <div class="fields">
+
+          <div class="input-field">
+            <label for="customerUsername">Username</label>
+            <input id="customerUsername" type="text" placeholder="Enter Username">
+          </div>
+
+          <div class="input-field">
+            <label for="customerId">ID Number</label>
+            <input id="customerId" type="text" placeholder="Enter Id number">
+          </div>
+
+          <div class="input-field">
+            <label for="customerId">ID Type</label>
+            <input id="customerIdType" type="text" placeholder="Enter Id number">
+          </div>
+
+          <div class="input-field">
+            <label for="customerFullName">Full Name</label>
+            <input id="customerFullName" type="text" placeholder="Enter your name">
+          </div>
+
+          <div class="input-field">
+            <label for="customerEmail">Email Address</label>
+            <input id="customerEmail" type="text" placeholder="Enter your email">
+          </div>
+
+          <div class="input-field">
+            <label for="customerContact">Mobile Number</label>
+            <input id="customerContact" type="text" placeholder="Enter your email">
+          </div>
+
+          <div class="input-field">
+            <label for="customerAddress">Address</label>
+            <input id="customerAddress" type="text" placeholder="Enter your Address">
+          </div>
+
+          <div class="input-field">
+            <label for="customerDob">Date of birth</label>
+            <input id="customerDob" type="text"  >
+          </div>
+
+          <div class="input-field">
+            <label for="customerGender">Gender</label>
+            <input id="customerGender" type="text"  >
+          </div>
+
+          <div class="input-field">
+            <label class="middle" for="customerProfilePic">Profile picture</label>
+            <div class="image-wrapper">
+              <img id="customerProfilePic" class="image"  src="../assets/image/image-upload-preview.png" alt="image">
+            </div>
+          </div>
+
+          <div class="input-field">
+            <label class="middle" for="customerNicPic1">Front Photo</label>
+            <div class="image-wrapper">
+              <img id="customerNicPic1" class="image" src="../assets/image/image-upload-preview.png" alt="image">
+            </div>
+
+          </div>
+
+          <div class="input-field">
+            <label class="middle" for="customerNicPic1">Back Photo</label>
+            <div class="image-wrapper">
+              <img id="customerNicPic2" class="image" src="../assets/image/image-upload-preview.png" alt="image">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="buttons ">
+          <button id="doneBtn" class="doneBtn" type="button">
+            <span class="btnText">Done</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <nav>
+    <div class="nav-bar">
+      <div class="logo">
+        Next.Tra
+      </div>
+      <ul>
+        <li><i class="uil uil-users-alt nav-icon"></i> User</li>
+        <li><i class="uil uil-arrow-growth nav-icon"></i> Financial</li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="user-container">
+    <div class="container">
+
+      <div class="row-1">
+        <div class="col">
+          <label class="sub-title">User</label>
+          <!--                    <label>Total:100</label>-->
+        </div>
+        <div class="col-2">
+          <button type="button" id="addBtn"><i class="uil uil-plus"></i> Add User</button>
+        </div>
+      </div>
+
+      <div class="table">
+        <table id="userTable" class="">
+          <thead class="head">
+          <tr>
+            <th>User</th>
+            <th>Id</th>
+            <!--                        <th>Type</th>-->
+            <th>Full Name</th>
+            <!--                        <th>Email</th>-->
+            <th>Gender</th>
+            <th>Dob</th>
+            <th>Address</th>
+            <th>Opt</th>
+            <th>Opt</th>
+            <th>Opt</th>
+          </tr>
+          </thead>
+          <tbody class="">
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="../assets/jquery/jquery-3.6.0.min.js"></script>
+  <script type="module" src="../controller/UserDashboard.js"></script>
+
+</body>
+</html>
