@@ -28,8 +28,9 @@ td{
 
 .table::-webkit-scrollbar-thumb{
     border-radius: .5rem;
-    background-color: #0004;
+    background-color: rgba(248, 12, 12, 0.27);
     visibility: hidden;
+
 }
 
 .table:hover::-webkit-scrollbar-thumb{
@@ -90,33 +91,11 @@ tbody tr:hover {
     /*background-color: #0a53be;*/
 }
 
-/*tbody tr td:nth-child(3){*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
 
 tbody tr td:nth-child(2)>strong,tbody tr td:nth-child(3) >strong{
    display: block;
 }
 
-/*tbody tr td:last-child{*/
-/*    background-color: crimson;*/
-/*}*/
-
-/*tbody tr td:last-child>div{*/
-/*    display: inline-block;*/
-/*    background-color: #2b66bd;*/
-/*    font-size: 30px;*/
-/*    !*height: 100%;*!*/
-/*}*/
-
-/*tbody tr td:nth-last-child(1),td:nth-last-child(2),td:nth-last-child(3){*/
-/*    !*background-color: #2b66bd;*!*/
-/*    vertical-align: middle;*/
-/*    text-align: center;*/
-/*    font-size: larger;*/
-/*    !*border-bottom: 1px solid white;*!*/
-/*}*/
 
 .options{
     vertical-align: middle;

@@ -14,9 +14,7 @@ body{
 .login-form{
     height: 100vh;
     /*background-color: #ffe01e;*/
-    /*
-    background-image: url( https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true );
-    */
+    background-image: url("../assets/image/pxfuel.jpg");
     background-position: center;
     background-size: cover;
 
@@ -28,7 +26,7 @@ body{
 .form-container{
     width: 70%;
     height: 80%;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 20px;
 
     display: flex;
@@ -48,10 +46,6 @@ body{
     align-items: center;
 }
 
-.title{
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-}
 .login{
     /*background-color: white;*/
     width: 70%;
@@ -62,12 +56,13 @@ body{
     font-weight: 500;
     font-size: 15px;
     text-align: center;
+    /*font-family: 'Maiandra GD',sans-serif;*/
 }
 
 .content{
     width: 50%;
     height: 100%;
-    padding: 1px;
+    padding: 20px;
     font-family: 'Prompt', sans-serif;
 }
 
@@ -75,7 +70,6 @@ body{
     font-size: 80px;
     font-weight: 1000;
     font-family: 'Prompt', sans-serif;
-    padding-left: 20px;
 }
 .content > h1 >span{
     font-size: 30px;
@@ -239,75 +233,3 @@ body{
 }
 
 
-/*--------------card----*/
-
-
-.card {
-    position: relative;
-
-    width: 700px;
-    height: 400px;
-    overflow: hidden;
-
-    border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/*Light blue cover above the slide show*/
-.card::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 900;
-
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(140, 22, 115, 0.2);
-}
-
-.card_part {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 7;
-
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    transform: translateX( 700px );
-    background-image: url( https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/1.jpg?raw=true );
-
-    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
-}
-
-
-.card_part.card_part-two {
-    z-index: 6;
-    background-image: url( https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true );
-    animation-delay: 7s;
-}
-
-.card_part.card_part-three {
-    z-index: 5;
-    background-image: url( https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/3.jpg?raw=true );
-    animation-delay: 14s;
-}
-
-.card_part.card_part-four {
-    z-index: 4;
-    background-image: url( https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true );
-    animation-delay: 21s;
-}
-
-
-@keyframes opaqTransition {
-    3% { transform: translateX( 0 ); }
-    25% { transform: translateX( 0 ); }
-    28% { transform: translateX( -700px ); }
-    100% { transform: translateX( -700px ); }
-}
