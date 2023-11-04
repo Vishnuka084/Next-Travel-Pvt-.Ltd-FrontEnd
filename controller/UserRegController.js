@@ -205,7 +205,7 @@ export class UserRegController {
 
         if(this.validateFields() && this.validatePassword($("#customerPassword")) &&
             this.checkPasswordIsEqual($("#customerPassword"),$("#customerRePassword")) &&
-                this.validateCbm()){
+            this.validateCbm()){
 
             console.log("sdfwefefe")
             document.querySelector(".second").style.opacity=(1);
@@ -244,21 +244,21 @@ export class UserRegController {
             (type === "email") ? "Allows only @,_,- , any uppercase letter (A-Z) and  any lowercase letter (a-z) \n " +
                 "Eg :- Dhanushka@gmail.com / dhanu_45@yahoo.lk" :
                 (type === "contact") ? "Allow only 10 numbers" :
-                (type === "address") ?"allows for 10 or 255 characters matching any uppercase letter (A-Z)," +
-                    " any lowercase letter (a-z), or a / and , " :
-                    (type === "address") ? "At least 8 characters long.\n" +
-                        "Contains a combination of uppercase letters, lowercase letters, numbers," +
-                        " and special characters (such as !, @, #, $, %, etc.)." :
-                        (type === "id") ?"Allow only for 10 or 255 numbers, \n DON'T INPUT (V) ENTER (0) FOR IT " :
-                            (type === "username") ? "Username must start with a letter (uppercase or lowercase).\n" +
-                                "Username can contain letters (uppercase or lowercase), numbers, underscores, and hyphens and @.\n" +
-                                "Username must be between 3 and 20 characters in length." :
-                                (type === "password") ? "At least 8 characters long.\n" +
-                                    "Contains a combination of uppercase letters, lowercase letters, " +
-                                    "numbers, and special characters (such as !, @, #, $, %, etc.)." :
-                                    (type === "idType") ? "Please select your Id type" :
-                                        (type === "gender") ? "Please select your gender" :
-                                            (type === "dob") ? "Please select your birthday" : "" ;
+                    (type === "address") ?"allows for 10 or 255 characters matching any uppercase letter (A-Z)," +
+                        " any lowercase letter (a-z), or a / and , " :
+                        (type === "address") ? "At least 8 characters long.\n" +
+                            "Contains a combination of uppercase letters, lowercase letters, numbers," +
+                            " and special characters (such as !, @, #, $, %, etc.)." :
+                            (type === "id") ?"Allow only for 10 or 255 numbers, \n DON'T INPUT (V) ENTER (0) FOR IT " :
+                                (type === "username") ? "Username must start with a letter (uppercase or lowercase).\n" +
+                                    "Username can contain letters (uppercase or lowercase), numbers, underscores, and hyphens and @.\n" +
+                                    "Username must be between 3 and 20 characters in length." :
+                                    (type === "password") ? "At least 8 characters long.\n" +
+                                        "Contains a combination of uppercase letters, lowercase letters, " +
+                                        "numbers, and special characters (such as !, @, #, $, %, etc.)." :
+                                        (type === "idType") ? "Please select your Id type" :
+                                            (type === "gender") ? "Please select your gender" :
+                                                (type === "dob") ? "Please select your birthday" : "" ;
 
         return message;
     }
