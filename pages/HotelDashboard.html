@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Vishnuka Yahan De Silva ">
+    <title>Hotel Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+<!--    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,400;1,900&family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/HotelDashboard.css">
+    <link rel="stylesheet" href="../assets/fontsAwesome/css/all.min.css">
+</head>
+<body>
+
+    <section id="model-container">
+        <div class="container animate__animated animate__zoomIn animate__delay-0.5s">
+            <div id="header">
+                <header>Hotel Registration</header>
+                <div id="cancelBtn">
+                    <i class="uil uil-times"></i>
+                </div>
+            </div>
+
+            <form id="guide-form">
+                <div class="form first">
+                    <div class="details personal">
+
+                        <span class="title">Personal Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label for="hotelId">Hotel ID</label>
+                                <input id="hotelId" disabled type="text" placeholder="" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelName">Hotel Name</label>
+                                <input id="hotelName" type="text" placeholder="Enter hotel name" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelCategory">Hotel Category</label>
+                                <select id="hotelCategory">
+                                    <option disabled selected value="1">Select Category</option>
+                                    <option>5 Star</option>
+                                    <option>4 Star</option>
+                                    <option>3 Star</option>
+                                    <option>2 Star</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelLocation">Hotel Location</label>
+                                <input id="hotelLocation" type="text" placeholder="Enter hotel location" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelGmapLocation">Hotel Google Map Location</label>
+                                <input id="hotelGmapLocation" type="text" placeholder="Enter location url" >
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="details contact">
+                        <span class="title">Contact Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label for="hotelContact_1">Hotel Contact</label>
+                                <input id="hotelContact_1" type="text" placeholder="Enter mobile number" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelContact_2">Hotel Contact</label>
+                                <input id="hotelContact_2" type="text" placeholder="Enter mobile number" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelEmail">Email Address</label>
+                                <input id="hotelEmail" type="text" placeholder="Enter email address" >
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details contact">
+                        <span class="title">Rest Details</span>
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label for="hotelPetAllow">Pet Allow</label>
+                                <select id="hotelPetAllow">
+                                    <option disabled selected value="1">Select Option</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelCancellationCriteria">Cancellation Criteria</label>
+                                <select id="hotelCancellationCriteria">
+                                    <option disabled selected value="1">Select Option</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+<!--                                <label for="guideManDay_value">Man Day Value</label>-->
+                                <input id="fileChooser" type="file">
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <button id="nextBtn" class="nextBtn" type="button">
+                                <span class="btnText">Next</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+
+                            <div id="warning-box">
+                                <i class="uil uil-shield-exclamation warning-icon"></i>
+                                <label id="warning-msg" class="warning-msg">ajksj jahFIUH EfbeuaIHF </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form second">
+                    <div class="details personal">
+
+                        <span class="title">Room Details</span>
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label for="hotelRoom_Opt_1">Full Board A/C Luxury Double Price</label>
+                                <input id="hotelRoom_Opt_1" type="number" placeholder="Enter fee" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelRoom_Opt_2">Half Board A/C Luxury Double Price</label>
+                                <input id="hotelRoom_Opt_2" type="number" placeholder="Enter fee" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelRoom_Opt_3">Full Board A/C Luxury Triple Price</label>
+                                <input id="hotelRoom_Opt_3" type="number" placeholder="Enter fee" >
+                            </div>
+
+                            <div class="input-field">
+                                <label for="hotelRoom_Opt_4">Half Board A/C Luxury Triple Price</label>
+                                <input id="hotelRoom_Opt_4" type="number" placeholder="Enter fee" >
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details contact">
+<!--                        <span class="title">Contact Details</span>-->
+                        <div class="fields">
+                            <div  class="input-field">
+                                <label class="middle" for="hotelImage">Profile Picture</label>
+                                <img id="hotelImage" src="../assets/image/image-upload-preview.png" alt="image">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div id="backBtn" class="backBtn">
+                                <i class="uil uil-angle-left-b"></i>
+                                <span class="btnText">Back</span>
+                            </div>
+
+                            <button id="submitBtn" class="sumbit" type="button">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <section class="main-section">
+        <nav>
+            <div class="nav-bar">
+                <div class="logo">
+                    Next.Travel
+                </div>
+            </div>
+        </nav>
+
+        <section class="main-content">
+
+            <div class="row-1">
+                <!--                <div class="col">-->
+                <!--                    <label class="sub-title">Vehicles</label>-->
+                <!--                </div>-->
+                <div class="col-3">
+                    <button type="button" id="addBtn"><i class="uil uil-plus"></i> Add Vehicle</button>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div id="allBtn" class="color opt">All</div>
+                <div class="col-2">
+                    <input id="searchTxt" type="search" placeholder="Search">
+                    <i class="uil uil-search"></i>
+                </div>
+            </div>
+
+            <div class="table">
+                <ul id="guide-container">
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <span class="star">-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                        </span>-->
+<!--                        <div>-->
+<!--                            <i class="fa-solid fa-shield-dog not-allow"></i>-->
+<!--                            <label>Polonaruwa</label>-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="fa-solid fa-square-arrow-up-right"></i></div>-->
+<!--                            <div><i class="fa-solid fa-arrows-rotate"></i></i></div>-->
+<!--                            <div><i class="fa-solid fa-trash-can"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <span class="star">-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                        </span>-->
+<!--                        <div>-->
+<!--                            <i class="fa-solid fa-shield-dog not-allow"></i>-->
+<!--                            <label>Polonaruwa</label>-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="fa-solid fa-square-arrow-up-right"></i></div>-->
+<!--                            <div><i class="fa-solid fa-arrows-rotate"></i></i></div>-->
+<!--                            <div><i class="fa-solid fa-trash-can"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <span class="star">-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                        </span>-->
+<!--                        <div>-->
+<!--                            <i class="fa-solid fa-shield-dog not-allow"></i>-->
+<!--                            <label>Polonaruwa</label>-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="fa-solid fa-square-arrow-up-right"></i></div>-->
+<!--                            <div><i class="fa-solid fa-arrows-rotate"></i></i></div>-->
+<!--                            <div><i class="fa-solid fa-trash-can"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <span class="star">-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                            <i class="fa-solid fa-star "></i>-->
+<!--                        </span>-->
+<!--                        <div>-->
+<!--                            <i class="fa-solid fa-shield-dog allow"></i>-->
+<!--                            <label>Galle</label>-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="fa-solid fa-square-arrow-up-right"></i></div>-->
+<!--                            <div><i class="fa-solid fa-arrows-rotate"></i></i></div>-->
+<!--                            <div><i class="fa-solid fa-trash-can"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li><li>-->
+<!--                    <img src="../assets/image/image_2.jpg">-->
+<!--                    <strong>Onali456</strong>-->
+<!--                    <label>Onali Samarasinha</label>-->
+<!--                    <div class="not-eligible">-->
+<!--                        Not Eligible-->
+<!--                    </div>-->
+<!--                    <div class="option-btn">-->
+<!--                        <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                        <div><i class="uil uil-sync"></i></div>-->
+<!--                        <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <img src="../assets/image/image_2.jpg">-->
+<!--                        <strong>Onali456</strong>-->
+<!--                        <label>Onali Samarasinha</label>-->
+<!--                        <div class="not-eligible">-->
+<!--                            Not Eligible-->
+<!--                        </div>-->
+<!--                        <div class="option-btn">-->
+<!--                            <div><i class="uil uil-expand-from-corner"></i></div>-->
+<!--                            <div><i class="uil uil-sync"></i></div>-->
+<!--                            <div><i class="uil uil-trash-alt"></i></div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+
+                   
+
+                </ul>
+
+            </div>
+
+        </section>
+    </section>
+
+    <script src="../assets/jquery/jquery-3.6.0.min.js"></script>
+    <script type="module" src="../controller/HotelController.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+</html>
