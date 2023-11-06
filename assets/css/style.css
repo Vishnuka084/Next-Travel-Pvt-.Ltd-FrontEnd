@@ -896,7 +896,7 @@ address {
 
 
 
-  .gallery { padding-bottom: calc(var(--section-padding * 2)); }
+  .gallery { padding-bottom: calc(var(--section-padding*2)); }
 
   .gallery-list {
     grid-template-columns: repeat(3, 1fr);
@@ -1023,9 +1023,6 @@ address {
   .footer-form .btn { width: 100%; }
 
 }
-
-
-
 
 
 @media (min-width: 1200px) {
