@@ -1,89 +1,3 @@
-/*-----------------------------------*\
- * #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-:root {
-
-  /**
-   * colors
-   */
-
-  --united-nations-blue: hsl(214, 56%, 58%);
-  --bright-navy-blue: hsl(214, 57%, 51%);
-  --spanish-gray: hsl(0, 0%, 60%);
-  --black-coral: hsl(225, 8%, 42%);
-  --oxford-blue: hsl(208, 97%, 12%);
-  --yale-blue: hsl(214, 72%, 33%);
-  --blue-ncs: hsl(197, 100%, 36%);
-  --gunmetal: hsl(206, 34%, 20%);
-  --gainsboro: hsl(0, 0%, 88%);
-  --cultured: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
-  --black: hsl(0, 0%, 0%);
-  --onyx: hsl(0, 0%, 25%);
-  --jet: hsl(0, 0%, 20%);
-
-  /**
-   * typography
-   */
-
-  --ff-poppins: "Poppins", sans-serif;
-  --ff-montserrat: "Montserrat", sans-serif;
-
-  --fs-1: calc(20px + 3.5vw);
-  --fs-2: calc(18px + 1.6vw);
-  --fs-3: calc(16px + 0.45vw);
-  --fs-4: 15px;
-  --fs-5: 14px;
-  --fs-6: 13px;
-  --fs-7: 12px;
-  --fs-8: 11px;
-
-  --fw-500: 500;
-  --fw-600: 600;
-  --fw-700: 700;
-  --fw-800: 800;
-
-  /**
-   * transition
-   */
-
-  --transition: 0.25s ease-in-out;
-
-  /**
-   * spacing
-   */
-
-  --section-padding: 60px;
-
-  /**
-   * border-radius
-   */
-
-  --radius-15: 15px;
-  --radius-25: 25px;
-
-}
-
-
-
-
-
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -117,13 +31,53 @@ html {
 
 body { background: var(--white); }
 
+:root {
+  --united-nations-blue: hsl(214, 56%, 58%);
+  --bright-navy-blue: hsl(214, 57%, 51%);
+  --spanish-gray: hsl(0, 0%, 60%);
+  --black-coral: hsl(225, 8%, 42%);
+  --oxford-blue: hsl(208, 97%, 12%);
+  --yale-blue: hsl(214, 72%, 33%);
+  --blue-ncs: hsl(197, 100%, 36%);
+  --gunmetal: hsl(206, 34%, 20%);
+  --gainsboro: hsl(0, 0%, 88%);
+  --cultured: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --onyx: hsl(0, 0%, 25%);
+  --jet: hsl(0, 0%, 20%);
+
+
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+
+  --fs-1: calc(20px + 3.5vw);
+  --fs-2: calc(18px + 1.6vw);
+  --fs-3: calc(16px + 0.45vw);
+  --fs-4: 15px;
+  --fs-5: 14px;
+  --fs-6: 13px;
+  --fs-7: 12px;
+  --fs-8: 11px;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+
+  --transition: 0.25s ease-in-out;
 
 
 
+  --section-padding: 60px;
 
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
+
+
+  --radius-15: 15px;
+  --radius-25: 25px;
+
+}
 
 .container { padding-inline: 15px; }
 
@@ -194,14 +148,7 @@ body { background: var(--white); }
   font-size: var(--fs-5);
 }
 
-
-
-
-
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
-
+/*---------------------------------header-------*/
 .header {
   position: absolute;
   top: 0;
@@ -360,14 +307,7 @@ body { background: var(--white); }
   pointer-events: all;
 }
 
-
-
-
-
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
-
+/* ------------------------------------ */
 .hero {
   background-image: url("../images/hero-banner.jpg");
   background-repeat: no-repeat;
@@ -399,12 +339,7 @@ body { background: var(--white); }
 }
 
 
-
-
-
-/*-----------------------------------*\
- * #TOUR SEARCH
-\*-----------------------------------*/
+/*----------------------------*/
 
 .tour-search {
   background: var(--bright-navy-blue);
@@ -441,13 +376,7 @@ body { background: var(--white); }
   margin-top: 35px;
 }
 
-
-
-
-
-/*-----------------------------------*\
- * #POPULAR
-\*-----------------------------------*/
+/*-----------------------------------*/
 
 .popular { padding-block: var(--section-padding); }
 
@@ -509,12 +438,7 @@ body { background: var(--white); }
 .popular .btn { margin-inline: auto; }
 
 
-
-
-
-/*-----------------------------------*\
- * #PACKAGE
-\*-----------------------------------*/
+/*-----------------------------------*/
 
 .package { padding-block: var(--section-padding); }
 
@@ -627,12 +551,7 @@ body { background: var(--white); }
 .package .btn { margin-inline: auto; }
 
 
-
-
-
-/*-----------------------------------*\
- * #GALLERY
-\*-----------------------------------*/
+/*-----------------------------------*/
 
 .gallery { padding-block: var(--section-padding); }
 
@@ -657,13 +576,7 @@ body { background: var(--white); }
   object-fit: cover;
 }
 
-
-
-
-
-/*-----------------------------------*\
- * #CTA
-\*-----------------------------------*/
+/*-----------------------------------*/
 
 .cta {
   background: var(--bright-navy-blue);
@@ -674,13 +587,7 @@ body { background: var(--white); }
 
 .cta .section-text { font-size: var(--fs-5); }
 
-
-
-
-
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
+/*-----------------------------------*/
 
 .footer-top {
   background: var(--gunmetal);
@@ -806,12 +713,7 @@ address {
 .footer-bottom-link:is(:hover, :focus) { color: var(--white); }
 
 
-
-
-
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
+/*-----------------------------------*/
 
 .go-top {
   position: fixed;
@@ -841,22 +743,7 @@ address {
 .go-top:is(:hover, :focus) { opacity: 1; }
 
 
-
-
-
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 580px screen
- */
-
 @media (min-width: 580px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 580px;
@@ -878,10 +765,6 @@ address {
 
 
 
-  /**
-   * HEADER
-   */
-
   .header { padding-top: 83px; }
 
   .helpline-box .icon-box { padding: 14px; }
@@ -898,11 +781,6 @@ address {
   }
 
 
-
-  /**
-   * HERO
-   */
-
   .hero {
     min-height: 800px;
     padding-top: 85px;
@@ -912,11 +790,6 @@ address {
 
   .btn-group { gap: 20px; }
 
-
-
-  /**
-   * TOUR SEARCH
-   */
 
   .tour-search-form {
     display: grid;
@@ -935,18 +808,7 @@ address {
   }
 
 
-
-  /**
-   * POPULAR
-   */
-
   .popular-card .card-content { right: auto; }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer .container {
     display: grid;
@@ -967,32 +829,15 @@ address {
 
 
 
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+
 
   :root {
-
-    /**
-     * typography
-     */
 
     --fs-5: 15px;
 
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 800px; }
 
@@ -1000,12 +845,6 @@ address {
     max-width: 60ch;
     margin-inline: auto;
   }
-
-
-
-  /**
-   * HEADER
-   */
 
   .helpline-box {
     display: flex;
@@ -1023,11 +862,6 @@ address {
   .social-list { gap: 10px; }
 
 
-
-  /**
-   * POPULAR
-   */
-
   .popular-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1039,11 +873,6 @@ address {
 
   .popular-card .card-content { right: 20px; }
 
-
-
-  /**
-   * PACKAGE
-   */
 
   .package-list { margin-bottom: 50px; }
 
@@ -1067,10 +896,6 @@ address {
 
 
 
-  /**
-   * GALLERY
-   */
-
   .gallery { padding-bottom: calc(var(--section-padding * 2)); }
 
   .gallery-list {
@@ -1079,12 +904,6 @@ address {
   }
 
   .gallery-image { border-radius: var(--radius-25); }
-
-
-
-  /**
-   * CTA
-   */
 
   .cta .container {
     display: flex;
@@ -1096,11 +915,6 @@ address {
 
   .cta .section-text { margin-inline: 0; }
 
-
-
-  /**
-   * FOOTER
-   */
 
   .form-wrapper {
     display: flex;
@@ -1116,26 +930,11 @@ address {
 }
 
 
-
-
-
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1050px; }
 
 
-
-  /**
-   * HEADER
-   */
 
   .header.active .header-top {
     position: unset;
@@ -1191,18 +990,7 @@ address {
   .overlay { display: none; }
 
 
-
-  /**
-   * HERO
-   */
-
   .hero .container { max-width: 740px; }
-
-
-
-  /**
-   * TOUR SEARCH
-   */
 
   .tour-search-form { grid-template-columns: repeat(5, 1fr); }
 
@@ -1213,36 +1001,15 @@ address {
   }
 
 
-
-  /**
-   * POPULAR
-   */
-
   .popular-list { grid-template-columns: repeat(3, 1fr); }
 
-
-
-  /**
-   * PACKAGE
-   */
 
   .meta-box { --fs-8: 13px; }
 
   .meta-box > ion-icon { font-size: 15px; }
 
-
-
-  /**
-   * CTA 
-   */
-
   .cta .section-title { max-width: 25ch; }
 
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top .container {
     grid-template-columns: repeat(3, 1fr);
@@ -1261,31 +1028,15 @@ address {
 
 
 
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
-
-    /**
-     * spacing
-     */
 
     --section-padding: 100px;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1180px; }
 
