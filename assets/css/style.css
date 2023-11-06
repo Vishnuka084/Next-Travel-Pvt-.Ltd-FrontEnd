@@ -79,6 +79,10 @@ body { background: var(--white); }
 
 }
 
+.header-top.container.logo >h1{
+  background-color: aliceblue;
+}
+
 .container { padding-inline: 15px; }
 
 .btn {

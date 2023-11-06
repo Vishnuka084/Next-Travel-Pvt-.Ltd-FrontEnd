@@ -1,0 +1,816 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #2c3855;
+    --primary-color-dark: #435681;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #f9f6f2;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+/*Style for select Date***************************************/
+body {
+    font-family: "Poppins", sans-serif;
+}
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.header__container {
+    padding: 1rem 1rem 5rem 1rem;
+    margin-top: 50px;
+}
+
+.header__image__container {
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient(
+            to right,
+            rgba(44, 56, 85, 0.9),
+            rgba(100, 125, 187, 0.1)
+    ),
+    url("../assets/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+.header__content {
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+
+.header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--white);
+}
+main .back{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+main .back div{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    color: white;
+    border-radius: 100%;
+    background-color: #888888;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    overflow: hidden;
+    transition: 0.1s;
+}
+main .back div:hover{
+    background-color: #a2a2a2;
+}
+main .back div span{
+    position: relative;
+    top: 7px;
+    left: 11px;
+    cursor: pointer;
+}
+.header__content p {
+    color: var(--extra-light);
+}
+
+.booking__container {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 6rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.booking__container form {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.booking__container .input__group {
+    width: 100%;
+    position: relative;
+}
+
+.booking__container label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.booking__container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+}
+.booking__container .combo-box{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+}
+
+.booking__container input:focus ~ label {
+    font-size: 0.8rem;
+    top: 0;
+}
+
+.booking__container .form__group p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.booking__container .btnSearch {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 24%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking__container .btnSearch:hover {
+    background-color: var(--primary-color-dark);
+}
+/*Style for select Date end**********************************/
+label {
+    margin-left: 5px;
+}
+#hotel-details{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+#hotel-details .row{
+    width: 100%;
+
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    background-color: white;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+#hotel-details .row:hover{
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+#hotel-details .row .col-9{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+}
+#hotel-details .row div:nth-child(2) div:nth-child(1) label{
+    margin-left: 10px;
+}
+#hotel-details .row div:nth-child(2) div:nth-child(2) a{
+    text-decoration: none;
+}
+#hotel-details .row div:nth-child(2) div:nth-child(1) h3:nth-child(2){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#hotel-details .row div:nth-child(2) div{
+    margin-bottom: 5px;
+}
+#hotel-details .row div:nth-child(2) div:nth-child(3) label:nth-child(2){
+    margin-left: 5px;
+}
+#hotel-details .row div:nth-child(2) div:nth-child(4) label:nth-child(2){
+    margin-left: 5px;
+}
+#hotel-details .row div:nth-child(2) div:nth-child(5) label:nth-child(2){
+    margin-left: 5px;
+}
+#hotel-details .row div:nth-child(2) div:nth-child(6) label:nth-child(2){
+    margin-left: 5px;
+}
+#hotel-details .row .col-9 div button{
+    position: absolute;
+    transform: translateX(448%);
+    border: none;
+    width: 130px;
+    height: 45px;
+    color: #000000;
+    background: #F7CF58;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 600;
+
+
+}
+#hotel-details .row .col-9 div button:hover{
+    background: black;
+    color: white;
+}
+#hotel-details .row div img{
+    margin: 19px 19px 19px 4px;
+    width: 249px;
+    height: 209px;
+    border-radius: 10px;
+}
+/*selected hotel data*/
+#roomType {
+    display: none;
+    position: relative;
+    left: 280px;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    z-index: 10000;
+
+}
+.roomType-container {
+    position: fixed;
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 146px;
+    margin-left: 30px;
+    padding: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.roomType-container h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.roomType-container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 250px;
+}
+
+.roomType-container form .details-personal {
+    margin-top: 30px;
+}
+
+.roomType-container form .title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: black;
+}
+
+
+.icon .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #b62d2d;
+    font-size: 2em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.roomType-container .details-personal table tbody tr td button{
+    width: 90px;
+    height: 40px;
+    background-color: #ffcd39;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.roomType-container .details-personal table tbody tr td button:hover{
+    background-color: #272f2c;
+    color: white;
+}
+.icon .icon-close:hover {
+    background: #ff0505;
+}
+/*select Vehicle details*/
+
+#vehicle-details{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+#vehicle-details .row{
+    width: 100%;
+
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    background-color: white;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+#vehicle-details .row:hover{
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+#vehicle-details .row .vehicle-Details{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+}
+#vehicle-details .row .vehicle-Details:nth-child(3){
+    padding-top: 54px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+}
+#vehicle-details .row .vehicle-Details:nth-child(3) label{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#vehicle-details .row div:nth-child(2) div:nth-child(1) label{
+    margin-left: 10px;
+}
+#vehicle-details .row div:nth-child(2) div:nth-child(2) a{
+    text-decoration: none;
+}
+#vehicle-details .row div:nth-child(2) div:nth-child(1) h3:nth-child(2){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#vehicle-details .row div:nth-child(2) div{
+    margin-bottom: 5px;
+}
+#vehicle-details .row div:nth-child(2) div:nth-child(3) label:nth-child(2){
+    margin-left: 5px;
+}
+#vehicle-details .row div:nth-child(2) div:nth-child(4) label:nth-child(2){
+    margin-left: 5px;
+}
+#vehicle-details .row div:nth-child(2) div:nth-child(5) label:nth-child(2){
+    margin-left: 5px;
+}
+#vehicle-details .row div:nth-child(2) div:nth-child(6) label:nth-child(2){
+    margin-left: 5px;
+}
+#vehicle-details .row .vehicle-Details div button{
+    position: absolute;
+    bottom: 22px;
+    transform: translateX(184%);
+    border: none;
+    width: 130px;
+    height: 45px;
+    color: #000000;
+    background: #F7CF58;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 600;
+
+
+}
+#vehicle-details .row .vehicle-Details div button:hover{
+    background: black;
+    color: white;
+}
+#vehicle-details .row div img{
+    margin: 19px 19px 19px 4px;
+    width: 249px;
+    height: 209px;
+    border-radius: 10px;
+}
+
+/*select Vehicle details end*/
+
+/*add Booking*/
+#hotel-register{
+    position: relative;
+    left: 280px;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    z-index: 10000;
+}
+.hotel-container{
+    position: fixed;
+    max-width: 900px;
+    min-height: 488px;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    margin-left: 300px;
+    padding: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.hotel-container h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hotel-container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 250px;
+}
+.hotel-container form .form{
+    position: absolute;
+    background: white;
+
+}
+/*.vehicle-container form .second{
+    opacity: 0;
+    pointer-events: none;
+}*/
+
+.hotel-container form .details-personal {
+    /*margin-top: 30px;*/
+}
+
+.hotel-container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: black;
+}
+
+.hotel-container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*.combo-box{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    cursor: pointer;
+
+}*/
+.hotel-container form button, .backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    margin: 25px 20px;
+    background-color: #0c63e4;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.hotel-container form button, .backBtn:hover{
+    background-color: #3883f3;
+}
+.hotel-container .first .buttons-vehicle{
+    display: flex;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+
+}
+.hotel-container .first .buttons-vehicle .btnDelete{
+    background-color: #b62d2d;
+    margin-left: 500px;
+    cursor: pointer;
+}
+.hotel-container .first .buttons-vehicle .btnDelete i{
+    font-size: 15px;
+}
+.hotel-container .first .buttons-vehicle .btnDelete:hover{
+    background-color: red;
+}
+.hotel-container .first .buttons-vehicle .nextBtn:hover{
+    background-color: #6197e7;
+}
+.hotel-container form button,
+.hotel-container form .backBtn{
+    font-size: 14px;
+    font-weight: 400;
+}
+form .fields .input-fields {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 35px 0;
+}
+
+.input-fields label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input-fields input {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-fields input:is(:focus,:valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-fields .combo-box {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+.input-fields input::placeholder {
+    color: #919090;
+    font-size: 15px;
+}
+.input-fields{
+    font-size: 15px;
+}
+/*emd Booking*/
+
+/*guide details Start*/
+#guide-details{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+#guide-details .row{
+    width: 100%;
+
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    background-color: white;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+#guide-details .row:hover{
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+#guide-details .row .vehicle-Details{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+}
+#guide-details .row .vehicle-Details:nth-child(3){
+    padding-top: 54px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+}
+#guide-details .row .vehicle-Details:nth-child(3) label{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#guide-details .row div:nth-child(2) div:nth-child(1) label{
+    margin-left: 10px;
+}
+#guide-details .row div:nth-child(2) div:nth-child(2) a{
+    text-decoration: none;
+}
+#guide-details .row div:nth-child(2) div:nth-child(1) h3:nth-child(2){
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#guide-details .row div:nth-child(2) div{
+    margin-bottom: 5px;
+}
+#guide-details .row div:nth-child(2) div:nth-child(3) label:nth-child(2){
+    margin-left: 5px;
+}
+#guide-details .row div:nth-child(2) div:nth-child(4) label:nth-child(2){
+    margin-left: 5px;
+}
+#guide-details .row div:nth-child(2) div:nth-child(5) label:nth-child(2){
+    margin-left: 5px;
+}
+#guide-details .row div:nth-child(2) div:nth-child(6) label:nth-child(2){
+    margin-left: 5px;
+}
+#guide-details .row .vehicle-Details div button{
+    position: absolute;
+    bottom: 29px;
+    transform: translateX(445%);
+    border: none;
+    width: 130px;
+    height: 45px;
+    color: #000000;
+    background: #F7CF58;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 600;
+
+
+}
+#guide-details .row .vehicle-Details div button:hover{
+    background: black;
+    color: white;
+}
+#guide-details .row div img{
+    margin: 19px 19px 19px 4px;
+    width: 249px;
+    height: 209px;
+    border-radius: 10px;
+}
+/*guide details End*/
+#purchase-details #purchase-content{
+    max-width: 1354px;
+    min-height: 628px;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 91px;
+    padding: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+#purchase-details #purchase-content .row{
+
+}
+#purchase-details #purchase-content .col-3{
+    margin-top: 12px;
+    margin-left: 75px;
+}
+#purchase-details #purchase-content .col-3 .feilds label{
+    margin-top: 5px;
+}
+#purchase-details #purchase-content .col-3 {
+    background-color: #eeeeee;
+    border-radius: 6px;
+    padding: 8px;
+
+}
+#purchase-details #purchase-content .col-7{
+    margin-top: 12px;
+    margin-left: 75px;
+}
+#purchase-details #purchase-content .col-7 .feilds label{
+    margin-top: 5px;
+}
+#purchase-details #purchase-content .col-7 {
+    background-color: #d6e1dc;
+    border-radius: 6px;
+    padding: 8px;
+
+}
+.col-3 #totalCost{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 18px;
+    margin-top: 78px;
+    width: 277px;
+    height: 129px;
+    border: 1px solid #FAE5A4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    background-color: #FAE5A4;
+}
+
+.col-3 #totalCost #priceDiv {
+    margin-top: 20px;
+}
+#paidH3{
+    font-size: 30px;
+    text-align: center;
+}
+
+#paid-Input .input-fields input{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    width: 360px;
+    height: 42px;
+    margin: 8px 0;
+    margin-top: 20px;
+}
+#paid-Input{
+    margin-left: 192px;
+    margin-top: 60px;
+}
+#purchaseBtn{
+    width: 138px;
+    margin-left: 583px;
+    margin-top: 26px;
+    height: 50px;
+    padding: 5px;
+    color: white;
+    background-color: #3CA6A6;
+    border-radius: 6px;
+    border: none;
+    transition: .3s;
+}
+#purchaseBtn:hover{
+    background-color: #318c8c;
+}
