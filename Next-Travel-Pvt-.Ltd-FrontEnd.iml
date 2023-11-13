@@ -7,5 +7,9 @@
     <orderEntry type="library" name="animate.css" level="application" />
     <orderEntry type="library" name="line" level="application" />
     <orderEntry type="library" name="sweetalert2" level="application" />
+    <orderEntry type="library" name="ionicons" level="application" />
+    <orderEntry type="library" name="remixicon" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="boxicons" level="application" />
   </component>
 </module>
