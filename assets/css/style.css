@@ -104,6 +104,13 @@ body { background: var(--white); }
   background: var(--yale-blue);
   border-color: var(--yale-blue);
 }
+.btn-primary:hover{
+  transform: scale(1.1)!important;
+  background: white!important;
+  color: black!important;
+  border: 2px solid darkolivegreen!important;
+  box-shadow: 1px 1px 10px 2px white!important;
+}
 
 .btn-secondary { border-color: var(--white); }
 
@@ -311,6 +318,14 @@ body { background: var(--white); }
   pointer-events: all;
 }
 
+
+.top-button:hover {
+  transform: scale(1.1)!important;
+  background: white!important;
+  color: black!important;
+  border: 2px solid darkolivegreen!important;
+  box-shadow: 1px 1px 10px 2px white!important;
+}
 /* ------------------------------------ */
 .hero {
   background-image: url("../images/hero-banner.jpg");
