@@ -10,6 +10,7 @@ var addressPattern = /^[0-9A-Z a-z,/:]{4,50}$/;
 
 var nicPattern = /^\d{9}[VvXx]$/;
 
+
 $('#user-UserName').keyup(function (e) {
     let userName = $('#user-UserName').val();
     if (!usernamePattern.test(userName)) {
@@ -87,7 +88,7 @@ function checkUserValid() {
                 !mobilePattern.test($('#user-Contact').val()) ? swal("Invalid Mobile Number !", "Check Your Mobile Number.", "warning") :
                     !emailPattern.test($('#user-Email').val()) ? swal("Invalid Email !", "Check Your Email.", "warning") :
                         !addressPattern.test($('#user-Address').val()) ? swal("Invalid Address !", "Check Your Address.", "warning") :
-                                !nicPattern.test($('#user-Nic').val()) ? swal("Invalid Nic !", "Check Your Nic.", "warning") : saveUser();
+                            !nicPattern.test($('#user-Nic').val()) ? swal("Invalid Nic !", "Check Your Nic.", "warning") : saveUser();
 }
 
 function clearLogin() {
