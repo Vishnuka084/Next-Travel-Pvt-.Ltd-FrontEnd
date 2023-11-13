@@ -158,7 +158,303 @@ body { background: var(--white); }
   color: var(--black-coral);
   font-size: var(--fs-5);
 }
+/*-----------------home-------------*/
+.wrapper{
+  position: absolute;
+  margin-left: 272px;
+  margin-top: -90px;
+  width: 400px;
+  height: 475px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.4s ease-out;
+  display: none;
+}
 
+.register-container{
+  position: absolute;
+  max-width: 900px;
+  backdrop-filter: blur(100px);
+  width: 100%;
+  margin-top: -80px;
+  background: white;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  padding: 30px;
+  border-radius: 6px;
+  display: none;
+  overflow: hidden;
+}
+.register-container h2{
+  font-size: 30px;
+  font-weight: 600;
+}
+.register-container form{
+  position: relative;
+  margin-top: 16px;
+  min-height: 250px;
+}
+.register-container form .details-personal{
+  margin-top: 30px;
+}
+.register-container form .title{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: black;
+}
+.register-container form .fields{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+form .fields .input-fields{
+  display: flex;
+  width: calc(100% / 3 - 15px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+.input-fields label{
+  font-size: 12px;
+  font-weight: 500;
+}
+.input-fields input{
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+.input-fields input:is(:focus,:valid){
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-fields #user-Gender{
+  height: 41px;
+}
+.icon .form-box{
+  width: 100%;
+  padding: 40px;
+}
+
+.icon .form-box.login{
+  display: none;
+}
+
+.wrapper .form-box.register{
+  position: absolute;
+  display: none;
+
+}
+
+.icon .icon-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #ff0000;
+  font-size: 2em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.icon .icon-close:hover{
+  background: #ff0505;
+}
+.form-box h2{
+  font-size: 2em;
+  color: #ffffff;
+  align-items: center;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid rgba(199, 196, 196, 0.89);
+  margin: 30px 0;
+}
+
+.input-box .custom-select #myComboBoxLogIn{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+.custom-select select {
+
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+}
+.custom-select select option{
+  color: #1e1d1d;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fcfcfc;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: white;
+  line-height: 57px;
+}
+.input-box input::placeholder{
+  color: white;
+}
+.remember-forget{
+  font-size: .9em;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-forget label input{
+  accent-color: rgba(255, 255, 255, 0.89);
+  margin-right: 10px;
+}
+.remember-forget a{
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+}
+.remember-forget a:hover{
+  text-decoration: underline;
+}
+.login-btn{
+  width: 50%;
+  height: 45px;
+  background: rgba(199, 196, 196, 0.89);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+}
+.register-btn{
+  width: 50%;
+  height: 45px;
+  background: rgba(73, 70, 70, 0.5);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #000000;
+  font-weight: 500;
+}
+.login-btn:hover{
+  background: #F7CF58;
+  color: #000000;
+}
+.register-btn:hover{
+  background: rgb(48, 110, 89);
+  color: #ffffff;
+}
+.login-register{
+  font-size: .9em;
+  color: #070707;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+  transition: ease .45s!important;
+
+}
+.register-text{
+  font-size: .9em;
+  color: #070707;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+  transition: ease .45s!important;
+
+}
+.register-text p{
+  color: #000000 !important;
+}
+.register-text p a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.register-text p a:hover{
+
+  text-decoration: underline;
+}
+.login-register p{
+  color: #ffffff !important;
+}
+.login-register p a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.login-register p a:hover{
+
+  text-decoration: underline;
+}
+main > section {
+  padding: 100px 18%;
+}
+
+.home-text {
+  height: 100%;
+  width: 100%;
+  transition: ease .45s!important;
+}
+@keyframes my-animationp {
+  0%{
+    transform: translateX(-0%);
+
+  }
+  25%{
+    transform: translateX(-25%);
+  }
+  50%{
+    transform: translateX(-50%);
+  }
+}
 /*---------------------------------header-------*/
 .header {
   position: absolute;
