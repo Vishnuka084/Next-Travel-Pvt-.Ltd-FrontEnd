@@ -286,7 +286,28 @@ body { background: var(--white); }
   cursor: pointer;
   z-index: 1;
 }
+.icon .icon-close:hover{
+  background: #ff0505;
+}
 
+
+/*----register---------*/
+.register-container{
+  position: absolute;
+  max-width: 900px;
+  backdrop-filter: blur(100px);
+  width: 100%;
+  margin-top: 110px;
+  background: white;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+  padding: 30px;
+  border-radius: 6px;
+  /*display: none;*/
+  overflow: hidden;
+}
 /*---------------------------------header-------*/
 .header {
   position: absolute;
