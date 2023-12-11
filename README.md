@@ -1,12 +1,41 @@
-# Next Travel -Pvt.Ltd
+# Next Travel Website
 
-#### This is to use 
-  - html
-  - CSS
-  - JavaScript
-  - bootstrap
-  - jQuery
-  - library
+Welcome to the Next Travel Website project! This website is designed for travel enthusiasts, offering a user-friendly interface to explore and plan their next adventure.
+
+## Live Demo
+
+[Include a link to the live demo of your Next Travel Website]
+
+## Features
+
+- **Responsive Design:**
+  - Ensure a seamless experience across various devices.
+
+- **Interactive Interface:**
+  - Engage users with dynamic elements and smooth transitions.
+
+- **Destination Showcase:**
+  - Highlight featured destinations with captivating images and descriptions.
+
+- **Travel Packages:**
+  - Display various travel packages with details on pricing, itinerary, and booking options.
+
+- **Contact Form:**
+  - Allow users to get in touch for inquiries or bookings through a convenient contact form.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Bootstrap
+
+## How to Run Locally
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Vishnuka084/Next-Travel-Pvt-.Ltd-FrontEnd.git
 
 ![Screenshot (87)](https://github.com/Vishnuka084/Next-Travel-Pvt-.Ltd-FrontEnd/assets/122769900/d74c2927-b65c-4bdf-ad41-1fe17917aa61)
 ![Screenshot (88)](https://github.com/Vishnuka084/Next-Travel-Pvt-.Ltd-FrontEnd/assets/122769900/fe3bb6cd-766c-41dd-a8a7-1c840aafad5d)
