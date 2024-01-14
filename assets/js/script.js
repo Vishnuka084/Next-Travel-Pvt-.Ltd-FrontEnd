@@ -1,8 +1,5 @@
 'use strict';
-
-/**
- * navbar toggle
- */
+///////navbar toggle
 
 const overlay = document.querySelector("[data-overlay]");
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
@@ -26,9 +23,7 @@ navToggleEvent(navLinks);
 
 
 
-/**
- * header sticky & go to top
- */
+///////header sticky & go to top
 
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
