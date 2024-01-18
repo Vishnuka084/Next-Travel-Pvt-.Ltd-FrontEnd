@@ -86,7 +86,7 @@
                 <div class="navbar-top">
 
                     <a href="https://github.com/Vishnuka084" class="logo">
-                        <img src="./assets/images/" alt="Next Travel Pvt.Ltd">
+                        <img src="./assets/images/logo-blue.svg" alt="Next Travel Pvt.Ltd">
                     </a>
 
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -124,8 +124,7 @@
                 </ul>
 
             </nav>
-
-            <a href="#"><button class="btn btn-primary">Login </button></a>
+            <a href="#"><button class="btn btn-primary">Book Now </button></a>
 
 
         </div>
@@ -134,7 +133,7 @@
 </header>
 <!------------------------------------------------------------------------------------------------------------------------->
 <main>
-    <section id="home" class="home">
+   <!-- <section id="home" class="home">
         <div class="home-text">
             <div class="wrapper1 icon">
                 <span class="icon-close">
@@ -238,6 +237,139 @@
                 </form>
             </div>
         </div>
+    </section>-->
+    <section id="home" class="home">
+        <div class="home-text">
+            <div class="wrapper icon">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <div class="custom-select">
+                                <select id="myComboBoxLogIn">
+                                    <option value="" disabled selected>Select LogIn Option</option>
+                                    <option value="option1">As a Customer</option>
+                                    <option value="option2">As a Admin</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" id="login-Email" required placeholder="Email">
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" id="login-password" required placeholder="Password">
+                        </div>
+                        <div class="remember-forget">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forget Password?</a>
+                        </div>
+                        <button type="button" class="login-btn" id="login-btn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account?<a
+                                    href="#"
+                                    class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="register-container icon">
+                <span class=" icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+
+                <h2>Registration</h2>
+                <form id="User-Form" action="/processForm" method="post">
+                    <div class="form first">
+                        <div class="details-personal personal">
+                            <span class="title">Personal Details</span>
+                            <div class="fields">
+                                <div class="input-fields">
+                                    <label>Username</label>
+                                    <input type="text" id="user-UserName" placeholder="Enter Username" required>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Password</label>
+                                    <input type="password" id="user-Password" placeholder="Enter Password" required>
+                                </div>
+                                <div class="input-fields">
+                                    <label>DOB</label>
+                                    <input type="date" id="user-Age" placeholder="Enter Age" required>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Mobile Number</label>
+                                    <input type="tel" id="user-Contact" placeholder="Enter Contact" required>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Email Address</label>
+                                    <input type="email" id="user-Email" placeholder="Enter Email" required>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Address</label>
+                                    <input type="text" id="user-Address" placeholder="Enter Address" required>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Gender</label>
+                                    <select id="user-Gender" class="combo-box" required>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="input-fields">
+                                    <label>NIC Number</label>
+                                    <input type="text" id="user-Nic" placeholder="Enter NIC" required>
+                                </div>
+                                <div class="input-fields">
+                                    <label>Profile Pic</label>
+                                    <input type="file" id="user-Profile">
+                                </div>
+                            </div>
+                            <button type="button" id="register-btn" class="register-btn">Register</button>
+                            <div class="register-text">
+                                <p>Already have an account?<a
+                                        href="#"
+                                        class="login-link">Login</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--
+                    <h3 data-aos="fade-right" data-aos-duration="1000">Welcome,</h3>
+                    <h1 data-aos="fade-right" data-aos-duration="1500">Enjoy Your Dream Vacation...</h1>
+
+                    <div class="social" data-aos="fade-right" data-aos-duration="3000">
+                        <box-icon name='facebook-circle' type='logo' color='#ffffff'></box-icon>
+                        <a href=""><i class="fa-brands fa-linkedin"
+                                                                                            style="color: #ffffff;"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"
+                                                                   style="color: #ffffff;"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"
+                                                                   style="color: #ffffff;"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"
+                                                      style="color: #ffffff;"></i></a>
+
+                    </div>
+                    <a href="#about" class="btn" data-aos="fade-right" data-aos-duration="3500">Booking</a>
+                </div>
+                <div class="home-img" data-aos="zoom-in-left">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+        -->
+
     </section>
 <!---------------------------------------------------------------------------------------->
     <article>
@@ -757,9 +889,6 @@
 
     </article>
 </main>
-
-
-
 <footer class="footer">
 
     <div class="footer-top">
@@ -859,10 +988,6 @@
 
 </footer>
 
-
-
-
-
 <a href="#top" class="go-top" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
 </a>
@@ -871,7 +996,6 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 <!--------->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -879,11 +1003,10 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <!--swiper JS-->
 <script src="assets/lib/swiper-bundle.min.js"></script>
-<script src="assets/js/Style.js"></script>
+<script src="./assets/js/script.js"></script>
 <script src="controller/SigninController.js"></script>
 <script src="controller/Navigation.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
